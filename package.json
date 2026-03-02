@@ -1,0 +1,16 @@
+{
+  "name": "steel-convex-demo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "convex dev",
+    "postinstall": "node scripts/ensure-steel-component-built.mjs"
+  },
+  "dependencies": {
+    "convex": "^1.23.0",
+    "steel-convex-component": "github:steel-experiments/steel-convex-component#v0.2.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}

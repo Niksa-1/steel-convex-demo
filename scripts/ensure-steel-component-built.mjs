@@ -46,9 +46,6 @@ const addDefaultExportIfMissing = (filePath, exportLine) => {
   console.log(`Patched ${filePath} with a default schema export.`);
 };
 
-addDefaultExportIfMissing(componentSchemaJs, "export default schema;");
-addDefaultExportIfMissing(componentSchemaDts, "export default schema;");
-
 const patchTopLevelMethodBinding = (filePath) => {
   if (!existsSync(filePath)) {
     return;
